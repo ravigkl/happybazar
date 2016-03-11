@@ -1,0 +1,251 @@
+html,body {
+	height: 100%;
+}
+
+h2 {
+	font-family: arial;
+}
+
+body {
+	margin: 0 auto;
+	font-family: arial;	
+}
+
+header {
+	width: 100%;
+	height: 130px;
+	/* IE10 Consumer Preview */
+	background-image: -ms-linear-gradient(top, #2A2826 0%, #7E7B7A 100%);
+	/* Mozilla Firefox */
+	background-image: -moz-linear-gradient(top, #2A2826 0%, #7E7B7A 100%);
+	/* Opera */
+	background-image: -o-linear-gradient(top, #2A2826 0%, #7E7B7A 100%);
+	/* Webkit (Safari/Chrome 10) */
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2A2826),
+		color-stop(1, #7E7B7A));
+	/* Webkit (Chrome 11+) */
+	background-image: -webkit-linear-gradient(top, #2A2826 0%, #7E7B7A 100%);
+	/* W3C Markup, IE10 Release Preview */
+	background-image: linear-gradient(to bottom, #2A2826 0%, #7E7B7A 100%);
+	
+
+}
+
+main {
+	width: 940px;
+	height: 730px;
+	background-color: #737373;
+	overflow: hidden;
+	border-bottom: 5px solid #3F3E3B;
+    border-radius: 15px;
+}
+
+#body {
+	margin-top: 5px;
+	height: 82%;
+	-webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
+	-moz-box-shadow: 0 0 10px rgb(0, 0, 0);
+	background-color: #646260;
+}
+
+.companyName {
+	font-family: arial;
+	color: #F7F4F4;
+	font-size: 50;
+	padding: 12;
+	font-weight: bold;
+	text-shadow: 6px 2px 9px #A1A1A1;
+}
+
+#logo {
+	height: 110px;
+	width: 80%;
+	float: left;
+	text-align: right;
+}
+
+#welcome {
+	text-align: right;
+	float: right;
+	height: 100%;
+}
+
+#welcome a {
+	display: block;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 5px;
+	color: #898888;
+	text-decoration: none;
+	margin-right: 5px;
+}
+
+#content {
+	color: white;
+	float: right;
+	width: 98%;
+	height: 420;
+	text-align: top;
+	margin-right: 10px;
+	background-color: #76716E;
+	-webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
+	-moz-box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+#searchLabel {
+	font-weight: bold;
+	font-size: 20px;	
+	color: #FFFFFF;
+	margin-right: 5px;
+}
+
+#search {
+	float: right;
+	width: 98%;
+	height: 60px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	background-color: #76716E;
+	-webkit-box-shadow: 0 0 10px rgb(0, 0, 0);
+	-moz-box-shadow: 0 0 10px rgb(0, 0, 0);
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.textbox {
+	border-radius: 5px;
+	border: 0;
+	outline: 0;
+	height: 35px;
+	width: 420px;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align: middle;
+	background-color: rgb(123, 123, 123);
+	-moz-box-shadow: inset 0 0 2px #000000;
+	-webkit-box-shadow: inset 0 0 2px #000000;
+	box-shadow: inset 0 0 2px #000000;
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(206, 206, 206);
+}
+
+.button {
+	border: 0;
+	border-bottom: 1px solid #979797;
+	display: block;
+	padding: 5px 5px 5px 0.5em;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	width: 200px;
+	border-radius: 5px;
+	background-color: rgb(146, 146, 146);
+	height: 32px;
+	margin-left: 10px;
+}
+
+
+.productInfo {
+	overflow: hidden;
+	margin-left: 10px;
+}
+
+#smallGameImage {
+	width: 110px;
+	height: 130px;
+}
+
+#gameImage {
+	width: 85%;
+	height: 95%;
+}
+
+#gameImageContainer {
+	float: left;
+	width: 40%;
+	height: 79%;
+}
+
+#listheader {
+	margin-bottom: 10px;
+	width: 100%;
+	font-weight: bold;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	background-color: #525252
+}
+
+.userMsg {
+	text-align: center;
+	font-size: 24px;	
+	color: #FFFFFF;
+	margin: 50px;
+}
+
+#userAlerts {
+	position: fixed;
+	top: 690;
+	left: 0;
+	width: 940px;    
+	height: 30px;   
+}
+
+#innerMessage {
+	text-align: center;
+	font-size: 24px;	
+	background-color:#FFE706;
+    color: #000;
+
+    width: 100%;
+    height: 100%;
+}
+
+#directions {
+	font-size: 18px;	
+}
+
+#resultList {
+	overflow: auto;
+	width: 95%;
+	height: 350px;
+	margin-left: 20px;
+}
+
+a:link {
+	font-size: 20px;	
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a:visited {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #FAEFBA;
+}
+
+a:active {
+    color: #FFFFFF;
+}
+
+#gameSummary {
+	overflow: auto;
+	font-size: 20px;
+	color: #FFFFFF;
+	padding-right: 10px;
+}
+
+.price {
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #6DA776;
+	color: #FFFFFF;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 5px;
+}

@@ -1,0 +1,22 @@
+<section id="listHeader">Search Results:</section>
+
+<section class="userMsg" ng-show="results == null || results.length == 0">
+	Please try your search again.
+</section>
+
+<section id="resultList" ng-show="results != null && results.length > 0">
+	<table height=100% width=100% cellspacing=10>
+		<tr ng-repeat="game in results">
+			<td align="center">
+				<a ui-sref="productInfo({ productId:game.productId})">
+					<img id="smallGameImage" ng-src="{{game.url}}">
+				</a>
+			</td>
+			<td width="60%" align="left">
+				<a ui-sref="productInfo({ productId:game.productId})">
+					<span>{{game.name}}</span>
+				</a>
+			</td>
+		</tr>
+	</table>
+</section>

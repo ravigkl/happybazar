@@ -1,0 +1,44 @@
+<html ng-app="happybazarapp">
+<head>
+<!-- build:css -->
+<link rel="stylesheet" href="app/css/default.css">
+<!-- endbuild -->
+</head>
+
+<body>
+
+	<main id="shell">
+
+		<!-- logo & top level links -->
+		<header ng-include src="'app/components/main/partials/header.html'"></header>
+
+		<!-- body -->
+		<section id="body">
+
+			<!-- header region -->
+			<section ng-include src="'app/components/search/partials/search.html'"></section>
+
+			<!-- region for display application content -->
+			<section id="content" ui-view></section>
+
+		</section>
+
+		<!-- conditional user alerts -->
+		<div id="userAlerts" ng-include src="'app/components/useralerts/partials/useralerts.html'"></div>
+
+	</main>
+
+	<script src="app/components/thirdParty/angular.min.js"></script>
+	<script src="app/components/thirdParty/angular-ui-router.min.js"></script>
+	<!-- build:js -->
+	<script src="app/components/app.js"></script>
+	<script src="app/components/data/appdata.js"></script>
+	<script src="app/components/useralerts/controllers/useralertsCrtl.js"></script>
+	<script src="app/components/search/controllers/searchCrtl.js"></script>
+	<script src="app/components/productdisplay/controllers/productDisplayCrtl.js"></script>
+	<script src="app/components/pricing/services/pricingSvc.js"></script>
+	<script src="app/components/messaging/services/messageSvc.js"></script>	
+	<script src="app/components/search/services/searchSvc.js"></script>	
+	<script src="app/components/productdisplay/services/productDisplaySvc.js"></script>	
+	<!-- endbuild -->
+</body>

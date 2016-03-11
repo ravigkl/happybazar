@@ -1,0 +1,34 @@
+<html ng-app="happybazarapp">
+<head>
+<link rel="stylesheet" href="styles.min.css">
+
+</head>
+
+<body>
+
+	<main id="shell">
+
+		<!-- logo & top level links -->
+		<header ng-include src="'app/components/main/partials/header.html'"></header>
+
+		<!-- body -->
+		<section id="body">
+
+			<!-- header region -->
+			<section ng-include src="'app/components/search/partials/search.html'"></section>
+
+			<!-- region for display application content -->
+			<section id="content" ui-view></section>
+
+		</section>
+
+		<!-- conditional user alerts -->
+		<div id="userAlerts" ng-include src="'app/components/useralerts/partials/useralerts.html'"></div>
+
+	</main>
+
+	<script src="app/components/thirdParty/angular.min.js"></script>
+	<script src="app/components/thirdParty/angular-ui-router.min.js"></script>
+	<script src="all.min.js"></script>
+
+</body>

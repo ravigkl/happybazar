@@ -1,0 +1,15 @@
+<nav id="search" ng-controller="searchController">
+	<form novalidate>
+		<table height=100% width=100%>
+			<tr>
+				<td width="75%" align="right">
+				<label id="searchLabel" for="title">Game Title</label>	
+				<input ng-model="game.name" class="textbox" type="text">
+				</td>
+				<td align="left">
+					<button  ng-click="search()" class="button">Search</button> 
+				</td>
+			</tr>
+		</table>
+	</form>
+</nav>
