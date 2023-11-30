@@ -20,7 +20,7 @@
 
   "devDependencies": {
     "browser-sync": "^2.7.1",
-    "del": "^1.1.1",
+    "del": "^6.0.0",
     "gulp": "^3.8.11",
     "gulp-concat": "^2.5.2",
     "gulp-html-replace": "^1.4.5",
@@ -35,6 +35,6 @@
     "node-qunit-phantomjs": "^1.2.0"
   },
   "dependencies": {
-    "del": "^1.1.1"
+    "del": "^6.0.0"
   }
 }
